@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Результаты анализа изображения</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Результаты анализа изображения</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Исходное изображение</h3>
+                <img src="{{ original_image }}" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h3>Декомпозиция {{ algorithm }}</h3>
+                <img src="{{ decomposed_image }}" class="img-fluid">
+            </div>
+        </div>
+        <a href="/" class="btn btn-primary mt-3">Вернуться на главную</a>
+    </div>
+</body>
+</html>
